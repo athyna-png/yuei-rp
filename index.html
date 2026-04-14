@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Étudiant - Yuei High School</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --ua-blue: #1a2a44;
+            --ua-gold: #f1c40f;
+            --ua-silver: #bdc3c7;
+            --ua-dark: #0d1721;
+            --ua-accent: #e74c3c;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--ua-dark);
+            color: #ffffff;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--ua-blue) 0%, #000 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--ua-gold);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--ua-gold);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .badge-status {
+            background: var(--ua-gold);
+            color: var(--ua-dark);
+            padding: 5px 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro-section {
+            background: var(--glass);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid var(--ua-gold);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--ua-gold);
+            border-bottom: 1px solid rgba(241, 196, 15, 0.3);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .highlight {
+            color: var(--ua-gold);
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(0,0,0,0.2);
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        th { color: var(--ua-gold); text-transform: uppercase; font-size: 0.8rem; }
+
+        .points-pos { color: #2ecc71; font-weight: bold; }
+        .points-neg { color: var(--ua-accent); font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .grid-info { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yuei Academy</h1>
+    <div class="badge-status">ESPACE ÉTUDIANT : ACCÈS AUTORISÉ</div>
+</header>
+
+<div class="container">
+
+    <section class="intro-section">
+        <h2>À propos de l'Académie</h2>
+        <p>Lycée de renommée mondiale, <strong>Yuei (U.A. High School)</strong> est le pilier de la formation héroïque. Notre institution ne se contente pas d'enseigner la maîtrise des Alters ; elle forge les symboles de paix de demain. À travers un cursus rigoureux, des installations de pointe et un corps enseignant composé de Héros Pros, nous poussons nos élèves à dépasser leurs limites : <em>Plus Ultra !</em></p>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-graduation-cap"></i> Promotion Scolaire</h2>
+        <div class="card">
+            <p>Nous avons optimisé le calendrier académique pour récompenser l'ambition. Une année scolaire dure désormais <strong>5 à 6 mois</strong> réels. Ce format accéléré favorise la compétition saine et permet aux élèves les plus investis de gravir les échelons rapidement.</p>
+            <p><i class="fas fa-exclamation-triangle highlight"></i> <strong>Condition de passage :</strong> Vous devez accumuler un minimum de <span class="highlight">500 points</span> pour accéder à l'année supérieure.</p>
+        </div>
+    </section>
+
+    <div class="grid-info" style="margin-top: 20px;">
+        <section class="card">
+            <h3>Le Big 3</h3>
+            <p>À la fin de chaque promotion, les <strong>trois élèves</strong> ayant accumulé le plus de points au classement général seront officiellement nommés le <strong>Big 3 de Yuei</strong>. Ils bénéficieront d'un prestige unique et d'avantages exclusifs lors des missions.</p>
+        </section>
+
+        <section class="card">
+            <h3>Suivi Héroïque</h3>
+            <p>Le registre des points est centralisé par l'administration. Chaque action doit être répertoriée dans le canal dédié afin que les points soient attribués manuellement par le personnel enseignant.</p>
+        </section>
+    </div>
+
+    <section style="margin-top: 40px;">
+        <h2><i class="fas fa-list-ol"></i> Barème des Points</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Action Scolaire / RP</th>
+                        <th>Récompense</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Participation à un cours</td>
+                        <td class="points-pos">+25 pts</td>
+                    </tr>
+                    <tr>
+                        <td>Activité scolaire / Événement</td>
+                        <td class="points-pos">+50 à +100 pts (MVP)</td>
+                    </tr>
+                    <tr>
+                        <td>Réalisation d'un projet scolaire</td>
+                        <td class="points-pos">+75 pts</td>
+                    </tr>
+                    <tr>
+                        <td>Réalisation d'un devoir</td>
+                        <td class="points-pos">+25 pts</td>
+                    </tr>
+                    <tr>
+                        <td>Interaction RP dans l'enceinte de Yuei</td>
+                        <td class="points-pos">+25 pts</td>
+                    </tr>
+                    <tr>
+                        <td>Stage héroïque (min. 2 scènes avec tuteur)</td>
+                        <td class="points-pos">+50 pts</td>
+                    </tr>
+                    <tr>
+                        <td>Dénoncer un comportement inadéquat</td>
+                        <td class="points-pos">+50 pts</td>
+                    </tr>
+                    <tr>
+                        <td>Absence non justifiée</td>
+                        <td class="points-neg">-20 pts</td>
+                    </tr>
+                    <tr>
+                        <td>Mauvaise conduite / Délit</td>
+                        <td class="points-neg">Selon gravité</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">* Note : L'esprit de camaraderie et de justice est le fondement de notre académie.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
